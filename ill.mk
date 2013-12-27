@@ -11,7 +11,7 @@ $(call inherit-product, vendor/illusion/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := flo
-PRODUCT_NAME := illusion_flo
+PRODUCT_NAME := ill_flo
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := asus
