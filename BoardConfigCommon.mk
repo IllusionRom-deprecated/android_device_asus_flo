@@ -39,13 +39,14 @@ TARGET_KRAIT_BIONIC_PLDSIZE := 64
 
 TARGET_NO_BOOTLOADER := false
 
+TARGET_KERNEL_CUSTOM_LINARO_TOOLCHAIN := custom-4.7/bin/arm-eabi-
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
 # BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=msm8960 maxcpus=2
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=flo user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
-TARGET_KERNEL_SOURCE := kernel/asus/datflo
-TARGET_KERNEL_CONFIG := datflo_defconfig
+TARGET_KERNEL_SOURCE := kernel/asus/bricked
+TARGET_KERNEL_CONFIG := bricked_defconfig
 
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_LEGACY_ALSA_AUDIO:= false
