@@ -5,9 +5,14 @@ TARGET_SCREEN_WIDTH := 1200
 
 PRODUCT_RELEASE_NAME := flo
 
-$(call inherit-product, device/asus/flo/full_flo.mk)
-
+# Inherit some common ill stuff.
 $(call inherit-product, vendor/illusion/config/common.mk)
+
+# Enhanced NFC
+$(call inherit-product, vendor/illusion/config/nfc_enhanced.mk)
+
+# Inherit device configuration
+$(call inherit-product, device/asus/flo/full_flo.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := flo
