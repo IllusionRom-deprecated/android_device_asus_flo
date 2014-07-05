@@ -39,7 +39,7 @@ TARGET_KRAIT_BIONIC_PLDSIZE := 64
 
 TARGET_NO_BOOTLOADER := false
 
-TARGET_KERNEL_CUSTOM_LINARO_TOOLCHAIN := arm-eabi-4.9/bin/arm-eabi-
+TARGET_KERNEL_CUSTOM_LINARO_TOOLCHAIN := arm-linux-gnueabihf-4.9/bin/arm-linux-gnueabihf-
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
 # BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=msm8960 maxcpus=2
